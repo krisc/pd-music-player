@@ -1,1 +1,1 @@
-Music player written in Pure Data.
+Music player written in Pure Data. Separated into modules so the user can make custom patches.
