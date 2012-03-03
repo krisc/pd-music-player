@@ -32,10 +32,10 @@
 #X obj 20 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X text 12 119 play;
-#N canvas 691 66 636 541 player 1;
+#N canvas 691 66 636 541 player 0;
 #X obj 376 386 *~;
 #X obj 232 552 dac~;
-#X obj 436 382 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 436 382 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 436 404 metro 50;
 #X obj 437 424 snapshot~;
@@ -43,7 +43,7 @@
 #X obj 407 472 /;
 #X floatatom 433 491 5 0 0 0 - - -;
 #X obj 410 513 hsl 200 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 19900 1;
+-1 -1 0 1;
 #X msg 234 169 0;
 #X obj 195 169 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -209,7 +209,7 @@
 #X floatatom 131 120 12 0 0 0 - - -;
 #X obj 112 61 r sampleSize;
 #X obj 117 143 spigot;
-#X obj 38 123 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 38 123 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 73 79 1;
 #X obj 91 31 t b f f;
@@ -263,6 +263,7 @@
 #X restore 18 174 pd clip;
 #X floatatom 75 201 5 0 0 0 - - -;
 #X obj 411 84 route;
+#X text 321 -119 test change;
 #X connect 3 0 17 2;
 #X connect 5 0 16 5;
 #X connect 5 0 10 0;
